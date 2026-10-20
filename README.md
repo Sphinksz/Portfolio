@@ -6,7 +6,7 @@ I build gameplay systems, playable prototypes, and tools for creating game world
 
 I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportunities.
 
-[GitHub](https://github.com/Sphinksz) · [itch.io](https://phoenixdevelopment.itch.io/) · [Resume (PDF)](assets/Blake_Swing_Gameplay_Programmer_Resume.pdf) · [Email](mailto:blake.a.swing@gmail.com)
+[itch.io](https://phoenixdevelopment.itch.io/) · [Resume (PDF)](assets/Blake_Swing_Gameplay_Programmer_Resume.pdf) · [Email](mailto:blake.a.swing@gmail.com)
 
 ## Selected work
 
