@@ -35,7 +35,7 @@ Brushfire is an action-adventure game about protecting and restoring a forest. P
 
 ## Veltino Grove
 
-**Unreal Engine · Game jam team project · 2024**
+**Unreal Engine · Game jam team project · 2024 ·C++/Blueprints**
 
 Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players explore, gather ingredients, interact with characters, and run a restaurant while balancing a karma system.
 
@@ -49,7 +49,7 @@ Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players e
 
 ## Terra Forge
 
-**Unreal Engine 5 · Independent development · 2026**
+**Unreal Engine 5 · Independent development · 2026 ·C++**
 
 Terra Forge is a terrain and world-authoring plugin that brings terrain creation into Unreal Engine. It lets me preview and adjust terrain features in real time before committing them to the level. The goal is to reduce the need to move between the engine and external world-building tools.
 
@@ -96,7 +96,6 @@ These smaller projects include solo coursework, experiments, and development too
 | **Class2024InkleProject** | Solo interactive-fiction prototype exploring functions in a standalone Inkle project | [Play in browser](https://phoenixdevelopment.itch.io/inkieadventure) |
 | **Run and Gun** | Unreal Engine coursework project | [Project notes](https://github.com/Sphinksz/Swing-G300-Week7) |
 | **3D Platformer** | Unreal Engine 5.4.4 coursework project with directional coin interactions | [Project notes](https://github.com/Sphinksz/Swing-G300-Week6) |
-| **Algebra Manager** | C# SWGEmu mod manager; work in progress | [Source code](https://github.com/Sphinksz/algebra-manager) |
 
 ## Technical skills
 
@@ -106,6 +105,6 @@ These smaller projects include solo coursework, experiments, and development too
 
 ## Background and contact
 
-I studied Computer Science and Game Development at **Indiana University Bloomington from 2023 to 2025**. I also served as a **U.S. Army Explosive Ordnance Disposal (EOD) team leader**, leading a two-person team where technical care, coordination, and clear communication were essential.
+I'm studying Computer Science and Game Development at **Indiana University Bloomington from 2023 to 2029**. I also served as a **U.S. Army Explosive Ordnance Disposal (EOD) team leader**, leading a two-person team where technical care, coordination, and clear communication were essential.
 
 For gameplay programming opportunities, contact **[blake.a.swing@gmail.com](mailto:blake.a.swing@gmail.com)**.
