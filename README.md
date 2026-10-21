@@ -19,7 +19,7 @@ I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportuni
 
 ## Brushfire
 
-
+<img src="assets/BrushfireCoverImage.jpg" alt="Brushfire Cover Art showcasing the game." width="620">
 
 **Unreal Engine · Game jam team project · 2025**
 
