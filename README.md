@@ -23,6 +23,10 @@ I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportuni
 
 Brushfire is an action-adventure game about protecting and restoring a forest. Players switch between fighting fire-based enemies and using a painting mechanic to repair the environment.
 
+[![Watch Brushfire gameplay](https://img.youtube.com/vi/cG6dYBwjEoI/hqdefault.jpg)](https://www.youtube.com/watch?v=cG6dYBwjEoI)
+
+[▶ Watch Brushfire gameplay on YouTube](https://www.youtube.com/watch?v=cG6dYBwjEoI)
+
 **My contribution**
 
 - Served as the sole programmer within a 12-person development team.
