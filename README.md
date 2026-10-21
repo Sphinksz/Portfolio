@@ -41,7 +41,7 @@ Brushfire is an action-adventure game about protecting and restoring a forest. P
 
 **Unreal Engine · Game jam team project · 2024 ·C++/Blueprints**
 
-Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players explore, gather ingredients, interact with characters, and run a restaurant while balancing a karma system.
+Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players explore, gather ingredients, interact with characters, and run a restaurant while balancing a karma system. Choices matter and the environment depends on it. Will you buy resources, or purge nature of its natural resources? Don't over-consume!
 
 **My contribution**
 
