@@ -19,11 +19,11 @@ I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportuni
 
 ## Brushfire
 
+
+
 **Unreal Engine · Game jam team project · 2025**
 
 Brushfire is an action-adventure game about protecting and restoring a forest. Players switch between fighting fire-based enemies and using a painting mechanic to repair the environment.
-
-[![Watch Brushfire gameplay](https://img.youtube.com/vi/cG6dYBwjEoI/hqdefault.jpg)](https://www.youtube.com/watch?v=cG6dYBwjEoI)
 
 [▶ Watch Brushfire gameplay on YouTube](https://www.youtube.com/watch?v=cG6dYBwjEoI)
 
