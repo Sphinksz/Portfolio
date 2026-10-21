@@ -39,6 +39,8 @@ Brushfire is an action-adventure game about protecting and restoring a forest. P
 
 ## Veltino Grove
 
+<img src="assets/VeltinoGrovePreview.png" alt="Veltino Grove Cover Art showcasing the game." width="620">
+
 **Unreal Engine · Game jam team project · 2024 ·C++/Blueprints**
 
 Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players explore, gather ingredients, interact with characters, and run a restaurant while balancing a karma system. Choices matter and the environment depends on it. Will you buy resources, or purge nature of its natural resources? Don't over-consume!
@@ -48,6 +50,16 @@ Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players e
 - Served as the sole programmer on the game jam team.
 - Built the NPC interaction, ingredient collection, cooking, and karma systems.
 - Connected these mechanics into a playable exploration and cooking experience.
+
+**Spawner System**
+
+*Development screenshot showing custom spawner system for level designers to easily add spawnables.*
+<img src="assets/VG_Spawner_Example.png" alt="Dev Screenshot of spawner system in Veltino Grove" width="620">
+
+
+*Development screenshot showing Spawned items after starting game.*
+<img src="assets/VG_Spawner_Spawned.png" alt="Dev Screenshot of spawned items in Veltino Grove." width="620">
+
 
 [Game page, build, and design documents](https://hlim951.itch.io/veltino-grove)
 
@@ -64,11 +76,11 @@ Terra Forge is a terrain and world-authoring plugin that brings terrain creation
 - Texture changes driven by height or regions.
 - Terrain authoring tested at world sizes up to **150 km**.
 
-This is an independent project developed with AI-assisted coding.
-
-<img src="assets/terraforge-preview.png" alt="Terra Forge inside Unreal Engine, showing terrain feature controls and a world preview with the size set to 150 km." width="620">
+This is an independent project developed with AI-assisted coding/prompt engineering.
 
 *Development screenshot showing terrain features, region and material tools, and the world preview.*
+<img src="assets/terraforge-preview.png" alt="Terra Forge inside Unreal Engine, showing terrain feature controls and a world preview with the size set to 150 km." width="620">
+
 
 ## SWGEmu
 
@@ -89,7 +101,7 @@ The game's existing spatial systems were built around quadtree zones. Supporting
 
 **Outcome:** Established a shared spatial architecture that could support both ground and space zones. This work required tracing dependencies across the game and checking that existing systems continued to function.
 
-[My SWGEmu Core3 fork](https://github.com/Sphinksz/Core3)
+[SWGEmu Core3](https://github.com/TheAnswer/Core3)
 
 ## Additional projects
 
