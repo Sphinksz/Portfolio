@@ -108,7 +108,13 @@ The game's existing spatial systems were built around quadtree zones. Supporting
 
 <img src="assets/droney-cover.png" alt="Droney game cover art." width="620">
 
-**C# · Unity · Gameplay Systems**
+**Unity · C# · Independent project**
+
+Droney is a Flappy Bird–inspired arcade game that challenges players to navigate a drone through narrow gaps between obstacles above a scrolling city skyline.
+
+My contribution
+- Independently developed the game in Unity using C#.
+- Built a layered parallax system with adjustable scrolling speeds, using time-based image offsets to create depth and maintain consistent motion across frame rates.
 
 ## Additional projects
 
