@@ -16,11 +16,11 @@ I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportuni
 | **Veltino Grove** | Sole programmer | NPC interaction, cooking, ingredient collection, and karma | [Game page and build](https://hlim951.itch.io/veltino-grove) |
 | **Terra Forge** | Independent developer | Terrain and world authoring inside Unreal Engine 5 | [Features and preview](#terra-forge) |
 | **SWGEmu** | Gameplay programmer / reverse engineering contributor | Shared spatial partitioning architecture for ground and space zones | [Technical overview](#swgemu) |
-| **Droney** | Independent developer | Unity based "flappy bird-like" drone game. | [Preview](#droney) |
+| **Droney** | Independent developer | Arcade gameplay and layered parallax in Unity | [Project overview](#droney) |
 
 ## Brushfire
 
-<img src="assets/BrushfireCoverImage.jpg" alt="Brushfire Cover Art showcasing the game." width="620">
+<img src="assets/BrushfireCoverImage.jpg" alt="Brushfire cover art." width="620">
 
 **Unreal Engine · Game jam team project · 2025**
 
@@ -32,7 +32,10 @@ Brushfire is an action-adventure game about protecting and restoring a forest. P
 
 - Served as the sole programmer within a 12-person development team.
 - Implemented the combat and painting systems for the playable demo.
-- Brought the team's gameplay concepts into an interactive Unreal Engine experience.
+
+**Problem and solution - Painting that affects the world**
+
+The painting mechanic needed to place paint on terrain and trigger interactions based on where and what the player painted. I implemented a trace-and-decal system to project paint onto the ground, then used the paint type and target area to determine which item to spawn.
 
 **Team result:** Placed **6th overall out of 33 entries** in IndieCade Climate Jam 2025.
 
@@ -40,67 +43,72 @@ Brushfire is an action-adventure game about protecting and restoring a forest. P
 
 ## Veltino Grove
 
-<img src="assets/VeltinoGrovePreview.png" alt="Veltino Grove Cover Art showcasing the game." width="620">
+<img src="assets/VeltinoGrovePreview.png" alt="Veltino Grove cover art." width="620">
 
-**Unreal Engine · Game jam team project · 2024 ·C++/Blueprints**
+**Unreal Engine · C++ / Blueprints · Game jam team project · 2024**
 
-Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players explore, gather ingredients, interact with characters, and run a restaurant while balancing a karma system. Choices matter and the environment depends on it. Will you buy resources, or purge nature of its natural resources? Don't over-consume!
+Veltino Grove is a 3D cooking adventure about reviving a dying forest. Players explore, gather ingredients, interact with characters, and run a restaurant. A karma system connects their resource-gathering choices to the state of the environment.
 
 **My contribution**
 
 - Served as the sole programmer on the game jam team.
 - Built the NPC interaction, ingredient collection, cooking, and karma systems.
-- Connected these mechanics into a playable exploration and cooking experience.
+- Created configurable spawning tools for the level-design team.
 
-**Spawner System**
+**Problem and solution - Configurable spawning for level designers**
 
-*Development screenshot showing custom spawner system for level designers to easily add spawnables.*
-<img src="assets/VG_Spawner_Example.png" alt="Dev Screenshot of spawner system in Veltino Grove" width="620">
+The game needed to spawn and despawn objects in response to player activity, while giving level designers a practical way to configure them. I built a custom spawning system using data assets and a reusable Blueprint object that designers could place in the level.
 
+*Editor setup: the custom spawner exposes spawnable content for level designers.*
 
-*Development screenshot showing Spawned items after starting game.*
-<img src="assets/VG_Spawner_Spawned.png" alt="Dev Screenshot of spawned items in Veltino Grove." width="620">
+<img src="assets/VG_Spawner_Example.png" alt="Custom spawner configuration in the Veltino Grove editor." width="620">
 
+*Runtime result: objects created by the spawner after the game starts.*
+
+<img src="assets/VG_Spawner_Spawned.png" alt="Objects spawned during gameplay in Veltino Grove." width="620">
 
 [Game page, build, and design documents](https://hlim951.itch.io/veltino-grove)
 
 ## Terra Forge
 
-**Unreal Engine 5 · Independent development · 2026 ·C++**
+**Unreal Engine 5 · C++ · Independent project · 2026**
 
-Terra Forge is a terrain and world-authoring plugin that brings terrain creation into Unreal Engine. It lets me preview and adjust terrain features in real time before committing them to the level. The goal is to reduce the need to move between the engine and external world-building tools.
+Terra Forge is an Unreal Engine plugin for creating and adjusting terrain, water, regions, and materials within the editor.
+
+**Problem and solution - Terrain authoring inside the editor**
+
+Moving between Unreal Engine and external terrain tools can interrupt world-building iteration. I developed Terra Forge to bring terrain creation, live previews, and adjustments into the editor before committing changes to the level.
 
 **Working features**
 
 - Terrain feature creation and editing with a live preview.
 - Water and region authoring within the same tool.
 - Texture changes driven by height or regions.
-- Terrain authoring tested at world sizes up to **150 km**.
 
-This is an independent project developed with AI-assisted coding/prompt engineering.
+**Development approach:** Built independently using AI-assisted coding and prompt engineering alongside my Unreal Engine knowledge.
+
+The preview below shows the authoring interface with a world-size setting of **150 km**.
 
 *Development screenshot showing terrain features, region and material tools, and the world preview.*
-<img src="assets/terraforge-preview.png" alt="Terra Forge inside Unreal Engine, showing terrain feature controls and a world preview with the size set to 150 km." width="620">
 
+<img src="assets/terraforge-preview.png" alt="Terra Forge inside Unreal Engine, showing terrain feature controls and a world preview with the size set to 150 km." width="620">
 
 ## SWGEmu
 
 **C++ · Lua · Gameplay systems · Reverse engineering**
 
-I contributed to SWGEmu as a gameplay programmer and on the reverse engineering side. A major contribution was implementing its initial octree to support Jump to Lightspeed space zones.
-
-**The technical problem**
-
-The game's existing spatial systems were built around quadtree zones. Supporting space required a three-dimensional spatial structure while preserving the existing ground-zone behavior.
+I contributed gameplay programming and reverse engineering work to SWGEmu, including its initial octree implementation for Jump to Lightspeed space zones.
 
 **My contribution**
 
-- Refactored the quadtree-dependent architecture around a shared `Tree` base type.
-- Retained quadtree partitioning for ground zones and implemented octree partitioning for space zones.
-- Updated the systems affected by that change throughout the codebase and checked their behavior after the refactor.
+- Implemented octree support for space zones and updated dependent systems throughout the codebase.
 - Contributed gameplay, networking, and scripting fixes in C++ and Lua.
 
-**Outcome:** Established a shared spatial architecture that could support both ground and space zones. This work required tracing dependencies across the game and checking that existing systems continued to function.
+**Problem and solution - Supporting ground and space zones**
+
+The existing spatial architecture depended on quadtrees for ground zones. Space zones required three-dimensional partitioning without disrupting ground-zone behavior. I refactored the architecture around a shared `Tree` base type, with separate quadtree and octree implementations for ground and space. This involved tracing dependencies throughout the codebase and checking affected systems after the refactor.
+
+**Outcome:** A shared spatial architecture supporting both ground and space zones.
 
 [SWGEmu Core3](https://github.com/TheAnswer/Core3)
 
@@ -112,9 +120,13 @@ The game's existing spatial systems were built around quadtree zones. Supporting
 
 Droney is a Flappy Bird–inspired arcade game that challenges players to navigate a drone through narrow gaps between obstacles above a scrolling city skyline.
 
-My contribution
+**My contribution**
+
 - Independently developed the game in Unity using C#.
-- Built a layered parallax system with adjustable scrolling speeds, using time-based image offsets to create depth and maintain consistent motion across frame rates.
+
+**Problem and solution - Depth in a scrolling background**
+
+The city backdrop needed a sense of depth as the drone moved through the course. I built a layered parallax system that updates image offsets at adjustable speeds, using `Time.deltaTime` to keep scrolling consistent across frame rates.
 
 ## Additional projects
 
