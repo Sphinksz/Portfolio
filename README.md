@@ -10,13 +10,13 @@ I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportuni
 
 ## Selected work
 
-| Project | My role | Focus | Explore | Problem and Solution |
-| --- | --- | --- | --- | --- |
-| **Brushfire** | Sole programmer | Combat and painting systems; IndieCade Climate Jam 2025 | [Game page and demo](https://zygarde824.itch.io/brushfire) | 3D Painting on terrain. I ended up coding in a decal and trace system that would project the decals onto the ground where the player was painting, and if it was a specific type of paint and paint area it would spawn the appropriate item. |
-| **Veltino Grove** | Sole programmer | NPC interaction, cooking, ingredient collection, and karma | [Game page and build](https://hlim951.itch.io/veltino-grove) | Large spawning or despawning based off user activity. I created custom spawn systems for the team that could easily be placed by level designer using data assets and a custom blueprint object.|
-| **Terra Forge** | Independent developer | Terrain and world authoring inside Unreal Engine 5 | [Features and preview](#terra-forge) | No active tool like GAEA inside Unreal Engine natively. I used prompt engineering and own knowledge of UE5 to create a universal terrain tool for large 3D maps. (Tested up to 150KM)|
-| **SWGEmu** | Gameplay programmer / reverse engineering contributor | Shared spatial partitioning architecture for ground and space zones | [Technical overview](#swgemu) |Large scale multiplayer and need for implementation of Oct Tree. I ended up taking the entire quad tree system and rewriting it to use a base tree class, which then had quad tree and oct tree derived from it. This allowed for me to separate space and ground zones into their proper tree systems.|
-| **Droney** | Independent developer | Unity based "flappy bird-like" drone game. | [Preview](#droney) | Parallax system. Using C# I was able to take an image and create a parallax system by updating the offset of the image with the player movement. parallaxAmount * Time.deltaTime |
+| Project | My role | Focus | Explore |
+| --- | --- | --- | --- |
+| **Brushfire** | Sole programmer | Combat and painting systems; IndieCade Climate Jam 2025 | [Game page and demo](https://zygarde824.itch.io/brushfire) |
+| **Veltino Grove** | Sole programmer | NPC interaction, cooking, ingredient collection, and karma | [Game page and build](https://hlim951.itch.io/veltino-grove) |
+| **Terra Forge** | Independent developer | Terrain and world authoring inside Unreal Engine 5 | [Features and preview](#terra-forge) |
+| **SWGEmu** | Gameplay programmer / reverse engineering contributor | Shared spatial partitioning architecture for ground and space zones | [Technical overview](#swgemu) |
+| **Droney** | Independent developer | Unity based "flappy bird-like" drone game. | [Preview](#droney) |
 
 ## Brushfire
 
