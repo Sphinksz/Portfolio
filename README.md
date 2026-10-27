@@ -16,6 +16,7 @@ I'm seeking **Gameplay Programmer** and **Gameplay Programmer Intern** opportuni
 | **Veltino Grove** | Sole programmer | NPC interaction, cooking, ingredient collection, and karma | [Game page and build](https://hlim951.itch.io/veltino-grove) | Large spawning or despawning based off user activity. I created custom spawn systems for the team that could easily be placed by level designer using data assets and a custom blueprint object.|
 | **Terra Forge** | Independent developer | Terrain and world authoring inside Unreal Engine 5 | [Features and preview](#terra-forge) | No active tool like GAEA inside Unreal Engine natively. I used prompt engineering and own knowledge of UE5 to create a universal terrain tool for large 3D maps. (Tested up to 150KM)|
 | **SWGEmu** | Gameplay programmer / reverse engineering contributor | Shared spatial partitioning architecture for ground and space zones | [Technical overview](#swgemu) |Large scale multiplayer and need for implementation of Oct Tree. I ended up taking the entire quad tree system and rewriting it to use a base tree class, which then had quad tree and oct tree derived from it. This allowed for me to separate space and ground zones into their proper tree systems.|
+| **Droney** | Independent developer | Unity based "flappy bird-like" drone game. | [Preview](#droney) | Parallax system. Using C# I was able to take an image and create a parallax system by updating the offset of the image with the player movement. parallaxAmount * Time.deltaTime |
 
 ## Brushfire
 
@@ -102,6 +103,12 @@ The game's existing spatial systems were built around quadtree zones. Supporting
 **Outcome:** Established a shared spatial architecture that could support both ground and space zones. This work required tracing dependencies across the game and checking that existing systems continued to function.
 
 [SWGEmu Core3](https://github.com/TheAnswer/Core3)
+
+## Droney
+
+<img src="assets/droney-cover.png" alt="Droney game cover art." width="620">
+
+**C# · Unity · Gameplay Systems**
 
 ## Additional projects
 
